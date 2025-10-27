@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Herois</title>
+</head>
+<body>
+    <header>
+        <h1><strong>Enquesta Herois</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="./../index.html">Index global</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><strong>Dades del Personatge</strong></legend>
+                <label for="nom">Nom de l’Heroi:</label>
+                <input type="text" id="nom" name="nom" minlength="3" maxlength="30" required>
+                <br>
+                <label for="email">Correu de contacte:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Codi d’accés secret:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="batalles">Missions completades aquest any:</label>
+                <input type="number" id="batalles" name="batalles" min="0" max="999">
+                <br>
+                <label for="poder">Nivell d’energia (1 a 100):</label>
+                <input type="range" id="poder" name="poder" min="1" max="100">
+                <br>
+                <label for="data">Data de la primera missió:</label>
+                <input type="date" id="data" name="data">
+                <br>
+                <label for="hora">Hora preferida per patrullar:</label>
+                <input type="time" id="hora" name="hora">
+                <br>
+                <label for="color">Color del emblema:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                <label for="web">Pàgina oficial de l’heroi:</label>
+                <input type="url" id="web" name="web" placeholder="(www.exemple.com)">
+                <br>
+                <label for="tel">Telèfon:</label>
+                <input type="tel" id="tel" name="tel" placeholder="Telèfon">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Rol de Personatge</legend>
+                <input type="radio" id="Heroi" name="tipus" value="Heroi" required>
+                <label for="Heroi">Heroi</label>
+                <input type="radio" id="50/50" name="tipus" value="50/50">
+                <label for="50/50">50/50</label>
+                <input type="radio" id="Dolent" name="tipus" value="Dolent">
+                <label for="Dolent">Dolent</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Habilitats Especials</strong></legend>
+                <input type="checkbox" name="poder" value="Teletransport">Teletransport<br>
+                <input type="checkbox" name="poder" value="Visió a traves de les coses">Visió a traves de les coses<br>
+                <input type="checkbox" name="poder" value="Control mental">Control mental<br>
+                <input type="checkbox" name="poder" value="Molta força">Molta força<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Univers</legend>
+                <label for="Univers">Univers:</label>
+                <select name="Univers" id="Univers" required>
+                    <option value="">Selecciona...</option>
+                    <option>Galàxia Nova</option>
+                    <option>El sol</option>
+                    <option>Quedarse a la terra</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Enquesta Galàctica</strong></legend>
+                <p>Quin és el teu enemic més temut?</p>
+                <input type="radio" name="enemic" value="Capitan america" required>Capitan america<br>
+                <input type="radio" name="enemic" value="thor">Thor<br>
+                <input type="radio" name="enemic" value="Hulk">Hulk<br>
+                <br>
+                <p>Quina arma prefereixes?</p>
+                <input type="radio" name="arma" value="ak44" required>ak44<br>
+                <input type="radio" name="arma" value="Lanzacohetes">Lanzacohetes<br>
+                <input type="radio" name="arma" value="Escut de ferro">Escut de ferro<br>
+                <br>
+                <p>Amb quin heroi no compartiries missió?</p>
+                <input type="radio" name="noEquip" value="Superman" required>sueperman<br>
+                <input type="radio" name="noEquip" value="ironman">ironman<br>
+                <input type="radio" name="noEquip" value="spiderman">spiderman<br>
+                <br>
+                <p>Com viatges entre planetes?</p>
+                <input type="radio" name="transport" value="Cohete" required>Amb un Cohete<br>
+                <input type="radio" name="transport" value="Teletransport">Teletransport<br>
+                <input type="radio" name="transport" value="Cavall">Cavall<br>
+                <br>
+
+                <p>On tens la teva base secreta?</p>
+                <input type="radio" name="base" value="Marte" required>A marte<br>
+                <input type="radio" name="base" value="Al mar">Al mar<br>
+                <input type="radio" name="base" value="A una illa">A una illa<br>
+                <br>
+
+                <p>Quin menjes a cada missió?</p>
+                <input type="radio" name="snack" value="Barra energètica" required> Barra energètica<br>
+                <input type="radio" name="snack" value="Sandwich de xocolata"> Sandwich de xocolata<br>
+                <input type="radio" name="snack" value="Batido de proteinas">Batido de proteinas<br>
+                <br>
+
+                <p>Quin paper jugues al teu equip?</p>
+                <input type="radio" name="rol" value="Estratègic" required>Estratègic<br>
+                <input type="radio" name="rol" value="Lider">Lider<br>
+                <input type="radio" name="rol" value="Executor">Executor<br>
+                <br>
+
+                <p>Quin estil musical t’inspira?</p>
+                <input type="radio" name="musica" value="reggaeton" required>reggaeton<br>
+                <input type="radio" name="musica" value="Rock">Rock<br>
+                <input type="radio" name="musica" value="Bachata">Bachata<br>
+                <br>
+
+                <p>Quan prefereixes actuar?</p>
+                <input type="radio" name="moment" value="Sempre" required>Sempre<br>
+                <input type="radio" name="moment" value="Cap de setman">Cap de setmana<br>
+                <input type="radio" name="moment" value="Entre setmana">Entre setmana<br>
+                <br>
+
+                <p>Quina frase defineix el teu esperit?</p>
+                <input type="radio" name="frase" value="El futur és meu" required> El futur és meu<br>
+                <input type="radio" name="frase" value="Cap frontera és eterna"> Cap frontera és eterna<br>
+                <input type="radio" name="frase" value="La llum sempre torna"> La llum sempre torna<br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Dades de Contacte</legend>
+                <label for="nom2">Nom real:</label>
+                <input type="text" id="nom2" name="nom2" required>
+                <label for="email1">Correu electrònic:</label>
+                <input type="email" id="email1" name="email1" required>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Pregunta Temàtica 1</legend>
+                <label for="pregunta1">Quin és el teu heroi preferit?</label>
+                <input type="text" id="pregunta1" name="pregunta1">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Pregunta Temàtica 2</legend>
+                <label for="pregunta2">T’agradaria formar part d'un equip</label>
+                <select id="pregunta2" name="pregunta2">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </fieldset>
+
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy;Contacte:<a href="mailto:jpimasreiser11@gmail.com">jpimasreiser11@gmail.com</a>
+        <address>Sant celoni, 08470</address>
+    </footer>
+</body>
+</html>
