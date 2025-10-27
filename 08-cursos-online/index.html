@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos online</title>
+</head>
+<body>
+    <header>
+        <h1>Inscripció al Curs Online de Cuina</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Index principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="./servidor.php" method="get" id="Nom_Complet"></form>
+            <fieldset>
+                <legend>Formulari d'inscripció</legend>
+                <label for="nom">Nom Complet</label>
+                <input type="text" id="nom" name="Nom_Complet"  placeholder="Introduiex el teu nom complet" minlength="4" maxlength="40" required>
+                <br><br>
+                <label for="Correu">Correu Electronic</label>
+                <input type="email" id="Correu" name="Correu_Electronic" placeholder="exemple@gmail.com" required>
+                <br><br>
+                <label for="telefon">Num de Telefon</label>
+                <input type="tel">
+                <br><br>
+                <label for="data">Data de naixament</label>
+                <input type="text" id="data" required>    
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Tipus de Curs</legend>
+                <label for="cursos">Categorias cursos</label>
+                <select name="cursos" id="cursos">
+                    <optgroup><label for="Cuina"></label></optgroup>
+                    <option>Cuina italiana</option>
+                    <option>Cuina Francesa</option>
+                    <option>Cuina espanyola</option>
+                </select>
+                <br>
+                <legend>Nivell de Experiència</legend>
+                <label for="Fàcil">Fàcil</label>
+                <input type="radio" id="Fàcil">
+                <label for="Intermig">Intermig</label>
+                <input type="radio" id="Intermig">
+                <label for="Difícil">Difícil</label>
+                <input type="radio" id="Difícil">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Interessos i motivació del curs</legend>
+                <label for="Interessos per:">Interessos per:</label><br>
+                <input type="checkbox" name="Cuina Fàcil" id="Cuina Fàcil" value="Cuina Fàcil">
+                <label for="Cuina Fàcil">Cuina Fàcil</label>
+                <br>
+                <input type="checkbox" name="Cuina Ràpida" id="Cuina Ràpida" value="Cuina Ràpida">
+                <label for="Cuina Ràpida">Cuina Ràpida</label>
+                <br>
+                <input type="checkbox" name="Cuina Sana" id="Cuina Sana" value="Cuina Sana">
+                <label for="Cuina Sana">Cuina Sana</label>
+                <br>
+                <label for="motivació">Perque vols fer el curs?</label>
+                <textarea name="motivació" id="motivació" required placeholder="Explica perque vols fer el curs"></textarea>
+                <label for="Tipus de nutrició">Tipus de Nutrició:</label>
+                <input list="Tipus de Nutrició" id="Tipus de Nutrició" name="Nutrició">
+                <datalist id="Tipus de Nutrició">
+                    <option value="Carnivora">Carnivora</option>
+                    <option value="Vegana">Vegana</option>
+                    <option value="Vegetariana">Vegetariana</option>
+                    <option value="Carbohidrats">Carbohidrats</option>
+                </datalist>
+            </fieldset>
+            <br>
+            <legend>Adjunta un document Explicant els teus gustus nutricionals </legend>
+            <input type="file" name="document" accept=".pdf">
+            <br>
+            <input type="submit" value="Enviar Formulari">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;Joan Pimàs | Carles Vallbona</p>
+        <p>Contacte: jpimàsreiser11@gmail.com</p>
+    </footer>
+</body>
+</html>
